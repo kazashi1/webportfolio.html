@@ -33,13 +33,60 @@ header {
 
 .navbar a {
   font-family: 'Playfair Display', serif;
-  color: #2c3233; /* Dark text */
+  color: #619faa; /* Dark text */
   font-weight: 600;
   font-size: 1.1rem;
   text-decoration: none;
   padding: 0.25rem 0;
   position: relative;
   transition: color 0.35s ease, transform 0.35s ease;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the navigation bar */
+  padding: 1rem 0;
+  background-color: #fff; /* Optional: Add a background color */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Logo Styling */
+.navbar .logo img {
+  width: 150px; /* Adjust the width of the logo */
+  height: 50px; /* Reduce the height to make it thinner */
+  object-fit: cover; /* Ensures the image fits within the dimensions */
+  margin-right: 20px; /* Add spacing between the logo and the nav links */
+  display: block; /* Ensure proper alignment */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* Add spacing between nav items */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  color: #2c3233;
+  font-weight: 600;
+  font-size: 1.3rem; /* Increase font size */
+  padding: 0.5rem 1rem; /* Add padding for consistent size */
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.navbar a:hover {
+  color: #fff;
+  background-color: #830d3a; /* Optional: Add a hover background color */
 }
 
 .navbar a::after {
@@ -49,7 +96,7 @@ header {
   left: 0;
   width: 100%;
   height: 2.5px;
-  background-color: #0cc1ce; /* Accent underline */
+  background-color: #242021; /* Accent underline */
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.35s ease;
@@ -58,7 +105,7 @@ header {
 
 .navbar a:hover,
 .navbar a:focus {
-  color: #c40a51; /* Accent color on hover */
+  color: #f1f1f1; /* Accent color on hover */
   transform: scale(1.07);
 }
 
