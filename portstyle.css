@@ -54,7 +54,7 @@ header {
 
 /* Logo Styling */
 .navbar .logo img {
-  width: 50px; /* Adjust the width of the logo */
+  width: 100px; /* Adjust the width of the logo */
   height: 50px; /* Reduce the height to make it thinner */
   object-fit: cover; /* Ensures the image fits within the dimensions */
   margin-right: 20px; /* Add spacing between the logo and the nav links */
